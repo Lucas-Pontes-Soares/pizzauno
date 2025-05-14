@@ -19,47 +19,47 @@ body {
     background-color: rgb(255, 142, 36);
 }
   
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 8px;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #DF3F3F;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    height: 60px; /* aumentei um pouco o header para equilibrar */
-  }
-  
-  .logo-esquerda img {
-    height: 40px; /* menor que os 60px anteriores */
-  }
-  
-  .titulo {
-    display: flex;
-    gap: 30px; /* espaço entre os links */
-    justify-content: center;
-    flex: 1;
-  }
-  
-  .titulo a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .logo-direita span {
-    color: white;
-    font-size: 16px;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DF3F3F;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 60px; 
+}
+
+.logo-esquerda img {
+  height: 40px; 
+}
+
+.titulo {
+  display: flex;
+  gap: 30px; 
+  justify-content: center;
+  flex: 1;
+}
+
+.titulo a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logo-direita span {
+  color: white;
+  font-size: 16px;
+}
   
 
 header a {
@@ -73,56 +73,56 @@ header span {
 }
 
 .footer {
-    background-color: rgb(87, 40, 0);
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-    margin-top: 40px;
-    font-size: 14px;
-  }
+  background-color: rgb(87, 40, 0);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 40px;
+  font-size: 14px;
+}
   
-  .footer h2 {
-    margin-top: 0;
-    color: white;
-  }
+.footer h2 {
+  margin-top: 0;
+  color: white;
+}
 
-  .containers {
-    background-color: rgb(238, 225, 80);
-    min-height: 200px;
-    height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 32px;
-    padding: 16px;
-    margin-bottom: 32px;
-    margin-top: 32px;
-    color: rgb(87, 40, 0);
-    padding-left: 16px;
-  }
+.containers {
+  background-color: rgb(238, 225, 80);
+  min-height: 200px;
+  height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 32px;
+  padding: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: rgb(87, 40, 0);
+  padding-left: 16px;
+}
   
  
 .conteudo-sobre {
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;  
-  }
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
+}
   
-  .texto {
-    flex: 1;  
-    margin-right: 20px;  
-  }
+.texto {
+  flex: 1;  
+  margin-right: 20px;  
+}
   
-  .imagem img {
-    max-width: 100%;  
-    height: auto;
-  }
+.imagem img {
+  max-width: 100%;  
+  height: auto;
+}
 
-  .galeria {
+.galeria {
   display: flex;
   justify-content: center;
-  gap: 20px; /* espaçamento entre as imagens */
-  flex-wrap: wrap; /* permite quebrar linha em telas menores */
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
 .imagem-legenda {
@@ -139,4 +139,54 @@ header span {
   margin-top: 8px;
   font-size: 14px;
   color: #555;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 10px;
+  }
+
+  .titulo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .conteudo-sobre {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containers {
+    width: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .logo-esquerda img {
+    height: 30px;
+  }
+
+  .logo-direita span {
+    font-size: 14px;
+  }
+
+  .titulo a {
+    font-size: 16px;
+  }
 }
